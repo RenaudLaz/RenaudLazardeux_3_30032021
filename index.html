@@ -18,15 +18,13 @@
     </header>
 
     <main>
-        <div class="header__resume">
-            <div class="maps">
-                <div class="maps__city">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="search" name="city" value="Paris, Belleville" placeholder="Votre ville">
-                </div>
+        <div class="resume">
+            <div class="resume__maps">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="resume__maps--city">Paris, Belleville</div>
             </div>
 
-            <div class="resume">
+            <div class="resume__rules">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <span class="btn__resume">
@@ -61,65 +59,72 @@
         <section class="restaurants">
             <div class="restaurants__list">
                 <h2>Restaurants</h2>
-                <a href="public/html/la_palette_du_gout.html">  
-                    <figure>
-                        <img src="public/images/restaurants/la_palette_du_gout.jpg" alt="restaurant la palette du goût">
-                        <figcaption>
-                            <div class="restaurant__name">
-                                <h3>La palette du goût</h3>
-                                <span class="heart">
-                                    <i class="fas fa-heart"></i>
-                                </span>
-                                <p>Ménilmontant</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <a href="public/html/la_note_enchantee.html">  
-                    <figure>
-                        <img src="public/images/restaurants/la_note_enchantee.jpg" alt="restaurant la note enchantée">
-                        <figcaption>
-                            <div class="restaurant__name">
-                                <h3>La note enchantée</h3>
-                                <span class="heart">
-                                    <i class="fas fa-heart"></i>
-                                </span>
-                                <p>Charonne</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <a href="public/html/a_la_francaise.html">  
-                    <figure>
-                        <img src="public/images/restaurants/a_la_francaise.jpg" alt="restaurant à la francaise">
-                        <figcaption>
-                            <div class="restaurant__name">
-                                <h3>&#192 la francaise</h3>
-                                <span class="heart">
-                                    <i class="fas fa-heart"></i>
-                                </span>
-                                <p>Cité Rouge</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <a href="public/html/le_delice_des_sens.html">  
-                    <figure>
-                        <img src="public/images/restaurants/le_delice_des_sens.jpg" alt="restaurant le délice des sens">
-                        <figcaption>
-                            <div class="restaurant__name">
-                                <h3>Le délice des sens</h3>
-                                <span class="heart">
-                                    <i class="fas fa-heart"></i>
-                                </span>
-                                <p>Folie-Méricourt</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
+                <div class="restaurants__list--selected">
+                    <div class="restaurants__list--selected--1">
+                        <a href="public/html/la_palette_du_gout.html">  
+                            <figure class="restaurants__img">
+                                <img src="public/images/restaurants/la_palette_du_gout.jpg" alt="restaurant la palette du goût">
+                                <figcaption>
+                                    <div class="restaurant__name">
+                                        <h3>La palette du goût</h3>
+                                        <span class="heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <p>Ménilmontant</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="restaurants__list--selected--2">
+                        <a href="public/html/la_note_enchantee.html">  
+                            <figure>
+                                <img src="public/images/restaurants/la_note_enchantee.jpg" alt="restaurant la note enchantée">
+                                <figcaption>
+                                    <div class="restaurant__name">
+                                        <h3>La note enchantée</h3>
+                                        <span class="heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <p>Charonne</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="restaurants__list--selected--3">
+                        <a href="public/html/a_la_francaise.html">  
+                            <figure>
+                                <img src="public/images/restaurants/a_la_francaise.jpg" alt="restaurant à la francaise">
+                                <figcaption>
+                                    <div class="restaurant__name">
+                                        <h3>&#192 la francaise</h3>
+                                        <span class="heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <p>Cité Rouge</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="restaurants__list--selected--4">
+                        <a href="public/html/le_delice_des_sens.html">  
+                            <figure>
+                                <img src="public/images/restaurants/le_delice_des_sens.jpg" alt="restaurant le délice des sens">
+                                <figcaption>
+                                    <div class="restaurant__name">
+                                        <h3>Le délice des sens</h3>
+                                        <span class="heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                        <p>Folie-Méricourt</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
             </div>    
         </section>
 

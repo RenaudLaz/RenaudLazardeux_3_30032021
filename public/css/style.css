@@ -13,6 +13,7 @@ h4 {
 
 body, html {
   font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
 }
 
 header {
@@ -24,6 +25,91 @@ header {
 
 .header__logo {
   max-width: 20%;
+}
+
+h2 {
+  margin: 2em;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.resume__maps {
+  background-color: grey;
+  height: 3em;
+}
+.resume__rules {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: #d3d1d1;
+  height: 9em;
+}
+
+.operation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.operation__header {
+  width: 100%;
+}
+
+.operation__steps {
+  display: flex;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.operation__steps--number {
+  height: 3em;
+  border-radius: 1.5em;
+  box-shadow: 0.25em 0.25em 0.5em;
+}
+
+.restaurants {
+  background-color: #dad8d8;
+  display: flex;
+}
+
+.restaurants__list--selected {
+  display: grid;
+  grid-template-columns: 5% 40% 10% 40% 5%;
+  grid-template-rows: 45% 10% 45%;
+}
+.restaurants__list--selected--1 {
+  border-radius: 1.5em;
+  box-shadow: 0 0 10px grey;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.restaurants__list--selected--2 {
+  border-radius: 1.5em;
+  box-shadow: 0 0 10px grey;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.restaurants__list--selected--3 {
+  border-radius: 1.5em;
+  box-shadow: 0 0 10px grey;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.restaurants__list--selected--4 {
+  border-radius: 1.5em;
+  box-shadow: 0 0 10px grey;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 
 .footer {
