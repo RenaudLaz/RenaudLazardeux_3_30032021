@@ -7,53 +7,56 @@
     <title>Ohmyfood</title>
     <script src="https://kit.fontawesome.com/e7dc15cad6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <H1><a href="index.html">ohmyfood</a></H1>
+        <img class="header__logo" src="/public/images/logo/ohmyfood.png" alt="logo ohmyfood">
     </header>
 
     <main>
-        <div class="maps">
-            <span>
-                <i class="fas fa-map-marker-alt"></i>
-            </span>
-            <span>
-                <input type="search" name="city" value="Paris, Belleville" placeholder="Votre ville">
-            </span>
-        </div>
+        <div class="header__resume">
+            <div class="maps">
+                <div class="maps__city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" name="city" value="Paris, Belleville" placeholder="Votre ville">
+                </div>
+            </div>
 
-        <div class="resume">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <span class="btn__resume">
-                <button>Explorez nos restaurants</button>
-            </span>
+            <div class="resume">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <span class="btn__resume">
+                    <button>Explorez nos restaurants</button>
+                </span>
+            </div>
+        
+            <div class="operation">
+                <div class="operation__header">
+                    <h2>Fonctionnement</h2>
+                </div>
+                <ul class="operation__steps">
+                    <li>
+                        <div class="operation__steps--number">1</div>
+                        <div><i class="fas fa-mobile-alt"></i></div>
+                        <p>Choisissez un restaurant</p>
+                    </li>
+                    <li>
+                        <div class="operation__steps--number">2</div>
+                        <div><i class="fas fa-list-ul"></i></div>
+                        <p>Composez votre menu</p>
+                    </li>
+                    <li>
+                        <div class="operation__steps--number">3</div>
+                        <div><i class="fas fa-store"></i></div>
+                        <p>Dégustez au restaurant</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <section class="operation">
-            <h2>Fonctionnement</h2>
-            <ul class="operation__steps">
-                <li>
-                    <div class="operation__steps--number">1</div>
-                    <div><i class="fas fa-mobile-alt"></i></div>
-                    <p>Choisissez un restaurant</p>
-                </li>
-                <li>
-                    <div class="operation__steps--number">2</div>
-                    <div><i class="fas fa-list-ul"></i></div>
-                    <p>Composez votre menu</p>
-                </li>
-                <li>
-                    <div class="operation__steps--number">3</div>
-                    <div><i class="fas fa-store"></i></div>
-                    <p>Dégustez au restaurant</p>
-                </li>
-            </ul>
-        </section>
 
         <section class="restaurants">
             <div class="restaurants__list">
@@ -123,13 +126,17 @@
     </main>
 
     <footer>
-        <h2>ohmyfood</h2>
-        <ul>
-            <li><a href="#"><i class="fas fa-utensils"></i>Proposez un restaurant</a></li>
-            <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="mailto:contact@ohmyfood.com" title="Envoyer un mail à contact@ohmyfood.com">Contact</a></li>
-        </ul>
+        <div class="footer">
+            <div class="footer__title">
+                <h4>ohmyfood</h4>
+            </div>
+            <div class="footer__link">
+                <a href="#"><i class="fas fa-utensils"> Proposez un restaurant</i></a></li>
+                <a href="#"><i class="fas fa-hands-helping"> Devenir partenaire</i></a></li>
+                <a href="#">Mentions légales</a></li>
+                <a href="mailto:contact@ohmyfood.com" title="Envoyer un mail à contact@ohmyfood.com">Contact</a></li>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
