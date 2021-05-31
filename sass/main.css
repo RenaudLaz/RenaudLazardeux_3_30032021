@@ -17,8 +17,13 @@ body, html {
 }
 
 .btn__resume--explore {
+  color: #ffffff;
+  border-color: transparent;
+  height: 4em;
+  width: 20em;
   background-color: #FF79DA;
   border-radius: 1.5em;
+  cursor: pointer;
 }
 
 .heart {
@@ -62,7 +67,7 @@ a {
 }
 
 .resume__maps {
-  background-color: grey;
+  background-color: #f3f3f3;
   height: 3em;
 }
 
@@ -78,7 +83,7 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #d3d1d1;
+  background-color: #fafafa;
   height: 9em;
 }
 
@@ -109,14 +114,8 @@ a {
 }
 
 .operation__steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   width: 25%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .operation__steps--number {
@@ -127,7 +126,7 @@ a {
 }
 
 .restaurants {
-  background-color: #dad8d8;
+  background-color: #f3f3f3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
