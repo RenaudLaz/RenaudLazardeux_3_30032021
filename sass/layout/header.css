@@ -6,6 +6,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  width: auto;
   margin: 1em 0;
+}
+
+h1 {
+  width: auto;
 }
 /*# sourceMappingURL=header.css.map */

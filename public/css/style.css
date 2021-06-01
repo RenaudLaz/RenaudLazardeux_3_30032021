@@ -24,7 +24,7 @@ body, html {
   color: #ffffff;
   border-color: transparent;
   height: 4em;
-  width: 20em;
+  width: auto;
   background-color: #FF79DA;
   border-radius: 1.5em;
   cursor: pointer;
@@ -40,7 +40,12 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+  width: auto;
   margin: 1em 0;
+}
+
+h1 {
+  width: auto;
 }
 
 h3 {
@@ -54,12 +59,13 @@ a {
 
 .resume {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
 }
 .resume__maps {
   background-color: #f3f3f3;
   height: 3em;
+  width: 100%;
 }
 .resume__rules {
   display: flex;
@@ -179,6 +185,7 @@ a {
   }
 
   .restaurants {
+    display: flex;
     height: auto;
   }
   .restaurants__list--selected {

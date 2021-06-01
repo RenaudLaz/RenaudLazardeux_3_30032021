@@ -7,11 +7,12 @@ a{
 }
 .resume {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     &__maps {
         background-color: #f3f3f3;
         height: 3em;
+        width: 100%;
     }
     &__rules {
         display: flex;
@@ -132,6 +133,7 @@ a{
         width: 90%;
     }
     .restaurants {
+        display: flex;
         height: auto;
             &__list--selected {
                 display: flex;
