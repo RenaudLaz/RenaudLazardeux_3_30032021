@@ -7,7 +7,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-h4 {
+h1 {
+  font-size: 2em;
+}
+
+h1, h5 {
   font-family: 'Shrikhand', 'Roboto', sans-serif;
 }
 
@@ -24,6 +28,7 @@ body, html {
   background-color: #FF79DA;
   border-radius: 1.5em;
   cursor: pointer;
+  margin-bottom: 2em;
 }
 
 .heart {
@@ -42,12 +47,8 @@ header {
   margin: 1em 0;
 }
 
-.header__logo {
-  max-width: 20%;
-}
-
-h2 {
-  margin: 2em 0;
+h3 {
+  margin: 2em;
 }
 
 a {

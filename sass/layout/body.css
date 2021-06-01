@@ -1,5 +1,5 @@
-h2 {
-  margin: 2em 0;
+h3 {
+  margin: 2em 2em 2em 0;
 }
 
 a {
@@ -66,15 +66,27 @@ a {
 }
 
 .operation__steps {
-  display: block;
-  width: 25%;
-}
-
-.operation__steps--number {
-  height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 28%;
   border-radius: 1.5em;
   -webkit-box-shadow: 0.25em 0.25em 0.5em;
           box-shadow: 0.25em 0.25em 0.5em;
+}
+
+.operation__steps--number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 100%;
+  background-color: blue;
+}
+
+.operation__steps--logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .restaurants {

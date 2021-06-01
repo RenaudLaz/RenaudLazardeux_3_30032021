@@ -1,5 +1,5 @@
-h2{
-    margin: 2em 0;
+h3{
+    margin: 2em 2em 2em 0;
 }
 a{
     color: black;
@@ -34,12 +34,21 @@ a{
         margin-bottom: 2em;
     }
     &__steps {
-        display: block;
-        width: 25%;
+        display: flex;
+        width: 28%;
+        height: 2em;
+        background-color: #f3f3f3;
+        border-radius: 2em;
+        box-shadow: 0.25em 0.25em 0.5em;
         &--number{
-            height: 3em;
-            border-radius: 1.5em;
-            box-shadow: 0.25em 0.25em 0.5em;
+            display: flex;
+            border-radius: 100%;
+            height: 1em;
+            width: 1em;
+            background-color: $color-primary;
+        }
+        &--logo{
+            display: inline-flex;
         }
     }
 }
@@ -112,3 +121,23 @@ a{
         }
 }
 
+@media screen and (max-width: 798px) {
+    .operation__order{
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 2em;
+    }
+    .operation__steps {
+        margin: 5%;
+        width: 90%;
+    }
+    .restaurants {
+        height: auto;
+            &__list--selected {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin: 5%;
+            }
+    }
+}
