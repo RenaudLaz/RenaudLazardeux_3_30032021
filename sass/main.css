@@ -24,7 +24,7 @@ body, html {
   color: #ffffff;
   border-color: transparent;
   height: 4em;
-  width: 20em;
+  width: auto;
   background-color: #FF79DA;
   border-radius: 1.5em;
   cursor: pointer;
@@ -44,11 +44,16 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  width: auto;
   margin: 1em 0;
 }
 
+h1 {
+  width: auto;
+}
+
 h3 {
-  margin: 2em;
+  margin: 2em 2em 2em 0;
 }
 
 a {
@@ -60,16 +65,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   text-align: center;
 }
 
 .resume__maps {
   background-color: #f3f3f3;
   height: 3em;
+  width: 100%;
 }
 
 .resume__rules {
@@ -115,15 +121,31 @@ a {
 }
 
 .operation__steps {
-  display: block;
-  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 28%;
+  height: 2em;
+  background-color: #f3f3f3;
+  border-radius: 2em;
+  -webkit-box-shadow: 0.25em 0.25em 0.5em;
+          box-shadow: 0.25em 0.25em 0.5em;
 }
 
 .operation__steps--number {
-  height: 3em;
-  border-radius: 1.5em;
-  -webkit-box-shadow: 0.25em 0.25em 0.5em;
-          box-shadow: 0.25em 0.25em 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+  background-color: #9356DC;
+}
+
+.operation__steps--logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .restaurants {
@@ -221,6 +243,38 @@ a {
 
 .restaurants__name {
   width: 80%;
+}
+
+@media screen and (max-width: 798px) {
+  .operation__order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .operation__steps {
+    margin: 5%;
+    width: 90%;
+  }
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
+  .restaurants__list--selected {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 5%;
+  }
 }
 
 .footer {
