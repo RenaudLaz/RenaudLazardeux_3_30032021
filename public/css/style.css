@@ -104,9 +104,9 @@ a {
   margin-bottom: 2em;
 }
 .operation__steps {
+  display: flex;
   align-items: center;
   text-align: center;
-  display: flex;
   width: 28%;
   height: 3em;
   background-color: #f3f3f3;
