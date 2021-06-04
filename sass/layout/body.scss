@@ -10,7 +10,7 @@ a{
     &__maps {
         display: inline-flex;
         align-items: center;
-        text-align: center;
+        justify-content: center;
         background-color: #f3f3f3;
         height: 2em;
         width: 100%;
@@ -31,7 +31,6 @@ a{
 
 .operation {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     &__order{
         display: flex;
@@ -57,24 +56,18 @@ a{
             background-color: $color-primary;
         }
         &--logo{
-            display: inline-flex;
+            display: flex;
             align-items: center;
-            text-align: center;
-            justify-content: space-evenly;
+            
         }
     }
-    .order__text{
-        width: auto;
-    }
-    .order__logo {
-        width: 1em;
-        height: 1em;
-    }
+
+
 }
 .restaurants {
     background-color: #f3f3f3;
     display: flex;
-    height: 53em;
+    height: 52em;
 
         &__list--selected {
             display: grid;
@@ -126,16 +119,13 @@ a{
         &__img {
             border-radius: 1.5em 1.5em 0 0;
             object-fit: cover;
-            height: 15.5em
+            height: 15.5em;
+            width: 100%;
         }
         &__description{
             display: flex;
-            flex-direction: row;
-            margin-left: 1em;
         }
-        &__name{
-            width: 80%;            
-        }
+
 }
 
 @media screen and (max-width: 798px) {
