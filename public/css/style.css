@@ -43,19 +43,27 @@ body, html {
   margin-bottom: 2em;
 }
 
-.heart {
-  color: red;
-}
-
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 1em 0;
 }
 
-h1 {
-  width: auto;
+i.fa-arrow-left {
+  position: absolute;
+  top: 2em;
+  left: 30px;
+}
+
+i.fa-map-marker-alt {
+  width: 1em;
+  height: 1em;
+}
+
+i.fa-heart {
+  color: red;
 }
 
 h3 {
@@ -84,10 +92,6 @@ a {
   background-color: #fafafa;
   height: 9em;
 }
-.resume i.fa-map-marker-alt {
-  width: 1em;
-  height: 1em;
-}
 
 .operation {
   display: flex;
@@ -101,6 +105,7 @@ a {
 }
 .operation__steps {
   align-items: center;
+  text-align: center;
   display: flex;
   width: 28%;
   height: 3em;
@@ -109,16 +114,19 @@ a {
   box-shadow: 0.25em 0.25em 0.5em;
 }
 .operation__steps--number {
-  display: flex;
+  position: relative;
+  left: -12px;
   border-radius: 100%;
-  height: 1em;
-  width: 1em;
+  height: 1.2em;
+  width: 1.2em;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   background-color: #9356DC;
+  color: #ffffff;
 }
 .operation__steps--logo {
-  display: flex;
+  display: inline-flex;
+  margin-left: 30px;
   align-items: center;
 }
 
@@ -180,13 +188,18 @@ a {
 }
 .restaurants__description {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+.restaurants__name {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 798px) {
   .operation__order {
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 2em;
   }
 
   .operation__steps {
@@ -198,8 +211,6 @@ a {
     height: auto;
   }
   .restaurants__list--selected {
-    display: grid;
-    width: 100%;
     grid-template-rows: 12em 1em 12em 1em 12em 1em 12em 2em;
     grid-template-columns: 5% 90% 5%;
   }
@@ -232,19 +243,7 @@ a {
     grid-row-end: 7;
   }
   .restaurants__img {
-    border-radius: 1.5em 1.5em 0 0;
-    object-fit: cover;
     height: 9em;
-  }
-  .restaurants__description {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    width: 100%;
-    margin-left: 1em;
-  }
-  .restaurants__name {
-    width: 80%;
   }
 }
 .footer {
@@ -284,8 +283,45 @@ a {
   }
 }
 .menu__img {
-  width: 20%;
+  width: 100%;
+  height: 25em;
   object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  width: 80%;
+  margin: 0 10%;
+  border-radius: 1em 1em 0 0;
+}
+.menu__title {
+  display: flex;
+  padding: 1em 2em 0 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__choice {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__header {
+  text-decoration: underline #99E2D0 3px;
+}
+
+.dish {
+  display: flex;
+  margin: 0 1em;
+  width: 27%;
+  flex-direction: column;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

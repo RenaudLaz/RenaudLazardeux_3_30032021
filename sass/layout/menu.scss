@@ -1,4 +1,40 @@
 .menu__img {
-    width: 20%;
+    width: 100%;
+    height: 25em;
     object-fit: cover;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 80%;
+    margin: 0 10%;
+    border-radius: 1em 1em 0 0;
+
+    &__title{
+        display: flex;
+        padding: 1em 2em 0 1em;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__choice{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__header{
+        text-decoration: underline $color-tertiary 3px;
+    }
+}
+.dish{
+    display: flex;
+    margin: 0 1em;
+    width: 27%;
+    flex-direction: column;
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: white;
 }
