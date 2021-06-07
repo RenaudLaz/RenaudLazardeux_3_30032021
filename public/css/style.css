@@ -23,6 +23,10 @@ h1 {
   font-size: 2em;
 }
 
+h2, h3, h4 {
+  font-weight: bold;
+}
+
 h1, h5 {
   font-family: "Shrikhand", "Roboto", sans-serif;
 }
@@ -30,6 +34,16 @@ h1, h5 {
 body, html {
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
+}
+
+.operation__header h3,
+.restaurants__list h3 {
+  margin: 5%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .btn__resume--explore {
@@ -54,6 +68,12 @@ body, html {
   margin-bottom: 2em;
 }
 
+.btn__position {
+  margin: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -73,18 +93,12 @@ i.fa-map-marker-alt {
   height: 1em;
 }
 
+.order__logo {
+  margin-right: 1.5em;
+}
+
 i.fa-heart {
   color: red;
-}
-
-h3 {
-  width: 90%;
-  margin: 5%;
-}
-
-a {
-  color: black;
-  text-decoration: none;
 }
 
 .resume__maps {
@@ -136,8 +150,9 @@ a {
   color: #ffffff;
 }
 .operation__steps--logo {
-  display: inline-flex;
-  margin-left: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 5%;
   align-items: center;
 }
 
@@ -293,6 +308,10 @@ a {
     margin-left: 0.75em;
   }
 }
+p {
+  font-size: 80%;
+}
+
 .menu__img {
   width: 100%;
   height: 25em;
@@ -300,17 +319,18 @@ a {
 }
 
 .menu {
-  display: flex;
   position: relative;
+  display: flex;
   top: -100px;
   flex-direction: column;
   background-color: yellow;
-  width: 80%;
-  margin: 0 10%;
+  width: 90%;
+  margin: 0 5%;
   border-radius: 1em 1em 0 0;
 }
 .menu__title {
   display: flex;
+  font-size: 1.5em;
   font-family: "Shrikhand", "Roboto", sans-serif;
   padding: 1em 2em 0 1em;
   align-items: center;
@@ -318,7 +338,8 @@ a {
 }
 .menu__choice {
   display: flex;
-  justify-content: space-between;
+  margin: 2em 0;
+  align-items: start;
 }
 .menu__header {
   text-decoration: underline #99E2D0 3px;
@@ -326,17 +347,26 @@ a {
 
 .dish {
   display: flex;
-  margin: 0 1em;
-  width: 30%;
+  width: 33%;
   flex-direction: column;
 }
 
 .choice {
   display: flex;
-  margin: 1em;
-  flex-direction: column;
+  margin: 0 1em;
+  flex-direction: row;
   border-radius: 1em;
   background-color: white;
+  margin: 1em;
+  align-items: center;
+}
+.choice__name {
+  margin: 5%;
+  width: 85%;
+}
+.choice__price {
+  width: 15%;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 798px) {
@@ -352,6 +382,10 @@ a {
   .menu__choice {
     flex-direction: column;
   }
+  .menu__header {
+    justify-content: start;
+    margin: 5%;
+  }
 
   .dish {
     margin: 0;
@@ -361,9 +395,8 @@ a {
   .choice {
     display: flex;
     margin: 1em;
-    flex-direction: column;
-    border-radius: 1em;
-    background-color: white;
+    flex-direction: row;
+    align-items: center;
   }
 }
 

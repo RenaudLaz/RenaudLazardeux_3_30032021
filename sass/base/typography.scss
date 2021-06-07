@@ -1,6 +1,9 @@
 h1{
   font-size: 2em;
 }
+h2, h3, h4{
+  font-weight: bold;
+}
 h1, h5 {
     font-family: 'Shrikhand', 'Roboto', sans-serif;
   }
@@ -8,3 +11,11 @@ body, html {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
   }
+.operation__header h3,
+.restaurants__list h3 {
+    margin: 5%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
