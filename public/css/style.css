@@ -43,6 +43,17 @@ body, html {
   margin-bottom: 2em;
 }
 
+.btn__order {
+  color: #ffffff;
+  border-color: transparent;
+  height: 4em;
+  width: 10em;
+  background-color: #FF79DA;
+  border-radius: 1.5em;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -290,6 +301,8 @@ a {
 
 .menu {
   display: flex;
+  position: relative;
+  top: -100px;
   flex-direction: column;
   background-color: yellow;
   width: 80%;
@@ -298,6 +311,7 @@ a {
 }
 .menu__title {
   display: flex;
+  font-family: "Shrikhand", "Roboto", sans-serif;
   padding: 1em 2em 0 1em;
   align-items: center;
   justify-content: space-between;
@@ -313,15 +327,44 @@ a {
 .dish {
   display: flex;
   margin: 0 1em;
-  width: 27%;
+  width: 30%;
   flex-direction: column;
 }
 
 .choice {
   display: flex;
+  margin: 1em;
   flex-direction: column;
   border-radius: 1em;
   background-color: white;
+}
+
+@media screen and (max-width: 798px) {
+  .menu__img {
+    height: 10em;
+  }
+
+  .menu {
+    top: -30px;
+    width: 100%;
+    margin: 0;
+  }
+  .menu__choice {
+    flex-direction: column;
+  }
+
+  .dish {
+    margin: 0;
+    width: 100%;
+  }
+
+  .choice {
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: white;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
