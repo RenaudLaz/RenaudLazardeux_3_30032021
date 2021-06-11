@@ -1,0 +1,19 @@
+i.fa-arrow-left {
+  position: absolute;
+  top: 2em;
+  left: 30px;
+}
+
+i.fa-map-marker-alt {
+  width: 1em;
+  height: 1em;
+}
+
+.order__logo {
+  margin-right: 1.5em;
+}
+
+i.fa-heart {
+  color: red;
+}
+/*# sourceMappingURL=logo.css.map */

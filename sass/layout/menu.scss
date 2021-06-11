@@ -1,23 +1,22 @@
-
 p{
     font-size: 80%;
 }
-.menu__img {
-    width: 100%;
-    height: 25em;
-    object-fit: cover;
-}
-
 .menu{
     position: relative;
     display: flex;
+    height: auto;
     top: -100px;
     flex-direction: column;
-    background-color: yellow;
+    background-color: grey;
     width: 90%;
     margin: 0 5%;
     border-radius: 1em 1em 0 0;
 
+    &__img {
+        width: 100%;
+        height: 25em;
+        object-fit: cover;
+    }
     &__title{
         display: flex;
         font-size: 1.5em;
