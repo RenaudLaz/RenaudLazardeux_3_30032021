@@ -3,7 +3,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background-color: #f3f3f3;
+        background-color: $color-title;
         height: 2em;
         width: 100%;
     }
@@ -12,7 +12,7 @@
         flex-direction: column;
         text-align: center;
         justify-content: space-evenly;
-        background-color: #fafafa;
+        background-color: $color-title2;
         height: 9em;
     }
 }
@@ -32,7 +32,7 @@
         text-align: center;
         width: 28%;
         height: 3em;
-        background-color: #f3f3f3;
+        background-color: $color-title2;
         border-radius: 1em;
         box-shadow: 0.25em 0.25em 0.5em;
         &--number{
@@ -59,7 +59,7 @@
 
 }
 .restaurants {
-    background-color: #f3f3f3;
+    background-color: $color-title2;
     display: flex;
     height: 52em;
 

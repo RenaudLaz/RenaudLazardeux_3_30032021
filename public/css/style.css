@@ -283,7 +283,7 @@ i.fa-heart {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #f3f3f3;
+  background-color: #e6e6e6;
   height: 2em;
   width: 100%;
 }
@@ -292,7 +292,7 @@ i.fa-heart {
   flex-direction: column;
   text-align: center;
   justify-content: space-evenly;
-  background-color: #fafafa;
+  background-color: #f2f2f2;
   height: 9em;
 }
 
@@ -312,7 +312,7 @@ i.fa-heart {
   text-align: center;
   width: 28%;
   height: 3em;
-  background-color: #f3f3f3;
+  background-color: #f2f2f2;
   border-radius: 1em;
   box-shadow: 0.25em 0.25em 0.5em;
 }
@@ -338,7 +338,7 @@ i.fa-heart {
 }
 
 .restaurants {
-  background-color: #f3f3f3;
+  background-color: #f2f2f2;
   display: flex;
   height: 52em;
 }
