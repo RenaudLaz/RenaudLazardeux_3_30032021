@@ -1,14 +1,25 @@
-.btn__resume--explore{
-        color:#ffffff;
-        border-color: transparent;
-        height: 4em;
-        width: auto;
-        background-color: $color-secondary;
-        border-radius: 1.5em;
-        cursor: pointer;
-        margin-bottom: 2em;
+.btn{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 100em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    &__class {
+        margin: 1em 0;
+        text-align: center;
     }
-
+    &__resume {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary,
+            $color-primary,
+        );
+    }
+}
 .btn__order{
     color:#ffffff;
     border-color: transparent;
@@ -20,7 +31,6 @@
     margin-bottom: 2em
 }
 .btn__position {
-    margin: 1em 0;
-    text-align: center;
+
     width: 100%;
 }

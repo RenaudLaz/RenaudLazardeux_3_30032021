@@ -52,6 +52,9 @@
             margin: 0 5%;
             align-items: center;
         }
+        &:hover {
+            background-color: $color-primary;
+        }
     }
 
 }

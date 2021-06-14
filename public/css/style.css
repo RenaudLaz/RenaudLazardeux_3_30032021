@@ -46,15 +46,23 @@ a {
   text-decoration: none;
 }
 
-.btn__resume--explore {
-  color: #ffffff;
-  border-color: transparent;
-  height: 4em;
-  width: auto;
-  background-color: #FF79DA;
-  border-radius: 1.5em;
+.btn {
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 100em;
+  border: none;
   cursor: pointer;
-  margin-bottom: 2em;
+  font-weight: bold;
+}
+.btn__class {
+  margin: 1em 0;
+  text-align: center;
+}
+.btn__resume {
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
 }
 
 .btn__order {
@@ -69,8 +77,6 @@ a {
 }
 
 .btn__position {
-  margin: 1em 0;
-  text-align: center;
   width: 100%;
 }
 
@@ -95,6 +101,7 @@ i.fa-map-marker-alt {
 
 .order__logo {
   margin-right: 1.5em;
+  color: grey;
 }
 
 i.fa-heart {
@@ -154,6 +161,9 @@ i.fa-heart {
   flex-wrap: nowrap;
   margin: 0 5%;
   align-items: center;
+}
+.operation__steps:hover {
+  background-color: #9356DC;
 }
 
 .restaurants {
@@ -320,7 +330,7 @@ p {
   flex-direction: column;
   background-color: grey;
   width: 90%;
-  margin: 0 5%;
+  margin: 0 5% -100px 5%;
   border-radius: 1em 1em 0 0;
 }
 .menu__img {
@@ -371,13 +381,13 @@ p {
 
 @media screen and (max-width: 798px) {
   .menu__img {
-    height: 10em;
+    height: 15em;
   }
 
   .menu {
     top: -30px;
     width: 100%;
-    margin: 0;
+    margin: 0 0 -30px 0;
   }
   .menu__choice {
     flex-direction: column;
