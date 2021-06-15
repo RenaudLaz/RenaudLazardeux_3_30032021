@@ -1,3 +1,8 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
 $main-color: #FFFFFF;
+
  $color-title: darken($main-color, 10%);
  $color-title2: darken($main-color, 5%);
+ $color-primary-light: lighten($color-primary,30%);

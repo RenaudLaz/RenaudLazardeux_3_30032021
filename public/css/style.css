@@ -82,11 +82,11 @@ a {
 
 .loader__container {
   position: fixed;
+  background-color: #e6e6e6;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 999;
   animation: font 4000ms both;
 }
 
@@ -129,17 +129,21 @@ a {
 @keyframes font {
   0% {
     opacity: 0.9;
+    z-index: 1;
   }
   99% {
     opacity: 0.9;
+    z-index: 1;
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes mixed-points1 {
   0% {
     transform: scale(1);
+    z-index: 1;
   }
   13% {
     transform: scale(1);
@@ -155,15 +159,18 @@ a {
   }
   99% {
     opacity: 1;
+    z-index: 1;
   }
   100% {
     transform: scale(1);
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes mixed-points2 {
   0% {
     transform: scale(1);
+    z-index: 1;
   }
   25% {
     transform: scale(1);
@@ -179,15 +186,18 @@ a {
   }
   99% {
     opacity: 1;
+    z-index: 1;
   }
   100% {
     transform: scale(1);
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes mixed-points3 {
   0% {
     transform: scale(1);
+    z-index: 1;
   }
   37% {
     transform: scale(1);
@@ -203,16 +213,19 @@ a {
   }
   99% {
     opacity: 1;
+    z-index: 1;
   }
   100% {
     transform: scale(1);
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes mixed-logo {
   0% {
     color: black;
     transform: rotate(0);
+    z-index: 1;
   }
   14% {
     color: #9256dc;
@@ -244,11 +257,27 @@ a {
   }
   99% {
     opacity: 1;
+    z-index: 1;
   }
   100% {
     color: black;
     transform: rotate(360deg);
     opacity: 0;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 798px) {
+  .load {
+    position: fixed;
+    top: 35%;
+    left: 30%;
+  }
+  .load__logo {
+    font-size: 2em;
+  }
+  .load__points--99 {
+    height: 2em;
+    width: 2em;
   }
 }
 header {
@@ -334,7 +363,7 @@ i.fa-heart {
   align-items: center;
 }
 .operation__steps:hover {
-  background-color: #9356DC;
+  background-color: #e4d5f6;
 }
 
 .restaurants {
