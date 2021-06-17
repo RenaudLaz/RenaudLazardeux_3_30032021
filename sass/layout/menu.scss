@@ -7,7 +7,7 @@ p{
     height: auto;
     top: -100px;
     flex-direction: column;
-    background-color: grey;
+    background-color: $color-title2;
     width: 90%;
     margin: 0 5% -100px 5%;
     border-radius: 1em 1em 0 0;
@@ -57,12 +57,10 @@ p{
         font-weight: bold;
     }
 }
-
 @media screen and (max-width: 798px) {
     .menu__img {
         height: 15em;
     }
-    
     .menu{
         top: -30px;
         width: 100%;

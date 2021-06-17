@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -87,7 +88,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  animation: font 4000ms both;
+  animation: font 400ms both;
 }
 
 .load {
@@ -100,7 +101,7 @@ a {
 .load__logo {
   font-size: 5em;
   font-family: "Shrikhand", sans-serif;
-  animation: mixed-logo 4000ms forwards;
+  animation: mixed-logo 400ms forwards;
 }
 .load__points {
   display: flex;
@@ -110,15 +111,15 @@ a {
 }
 .load__points--1, .load__points--6 {
   background-color: #9356DC;
-  animation: mixed-points1 4000ms forwards;
+  animation: mixed-points1 400ms forwards;
 }
 .load__points--2, .load__points--5 {
   background-color: #FF79DA;
-  animation: mixed-points2 4000ms forwards;
+  animation: mixed-points2 400ms forwards;
 }
 .load__points--3, .load__points--4 {
   background-color: #99E2D0;
-  animation: mixed-points3 4000ms forwards;
+  animation: mixed-points3 400ms forwards;
 }
 .load__points--99 {
   height: 3em;
@@ -308,6 +309,7 @@ i.fa-heart {
   color: red;
 }
 
+/*bloc présentation*/
 .resume__maps {
   display: inline-flex;
   align-items: center;
@@ -325,6 +327,8 @@ i.fa-heart {
   height: 9em;
 }
 
+/*bloc présentation*/
+/*bloc fonctionnement*/
 .operation {
   display: flex;
   flex-direction: column;
@@ -366,6 +370,8 @@ i.fa-heart {
   background-color: #e4d5f6;
 }
 
+/*bloc fonctionnement*/
+/*bloc restaurants*/
 .restaurants {
   background-color: #f2f2f2;
   display: flex;
@@ -373,7 +379,7 @@ i.fa-heart {
 }
 .restaurants__list--selected {
   display: grid;
-  grid-template-columns: 5% 40% 10% 40% 5%;
+  grid-template-columns: 5% 42% 6% 42% 5%;
   grid-template-rows: 42% 16% 42%;
 }
 .restaurants__list--selected--1 {
@@ -424,8 +430,9 @@ i.fa-heart {
 }
 .restaurants__description {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: 0 1em;
 }
 .restaurants__name {
@@ -433,6 +440,26 @@ i.fa-heart {
   flex-direction: column;
 }
 
+/*image nouveau*/
+.new__restaurant {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 0.6em;
+  border: solid 1px #99E2D0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #99E2D0;
+  color: #278870;
+}
+.new__photo {
+  display: block;
+  position: relative;
+}
+
+/*image nouveau*/
+/*bloc restaurants*/
+/*responsive mobile*/
 @media screen and (max-width: 798px) {
   .operation__order {
     flex-direction: column;
@@ -482,6 +509,7 @@ i.fa-heart {
     height: 9em;
   }
 }
+/*responsive mobile*/
 .footer {
   display: flex;
   flex-direction: column;
@@ -528,7 +556,7 @@ p {
   height: auto;
   top: -100px;
   flex-direction: column;
-  background-color: grey;
+  background-color: #f2f2f2;
   width: 90%;
   margin: 0 5% -100px 5%;
   border-radius: 1em 1em 0 0;

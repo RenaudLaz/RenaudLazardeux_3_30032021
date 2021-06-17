@@ -1,0 +1,146 @@
+@keyframes font {
+    0% {
+        opacity: 0.9;
+        z-index: 1;
+    }
+    99%{
+        opacity: 0.9;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@keyframes mixed-points1 {
+    0% {
+        transform: scale(1);
+        z-index: 1;
+    }
+    13% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(0);
+    }
+    61%{
+        transform: scale(0);
+    }    
+    62% {
+        transform: scale(1);
+    }
+    99%{
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+        z-index: -1;
+    }
+
+}
+@keyframes mixed-points2 {
+    0% {
+        transform: scale(1);
+        z-index: 1;
+    }
+    25% {
+        transform: scale(1);
+    }
+    26% {
+        transform: scale(0);
+    }
+    73%{
+        transform: scale(0);
+    }    
+    74% {
+        transform: scale(1);
+    }
+    99%{
+        opacity: 1;
+        z-index: 1;
+
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+        z-index: -1;
+
+    }
+}
+@keyframes mixed-points3 {
+    0% {
+        transform: scale(1);
+        z-index: 1;
+    }
+    37% {
+        transform: scale(1);
+    }
+    38% {
+        transform: scale(0);
+    }
+    85%{
+        transform: scale(0);
+    }    
+    86% {
+        transform: scale(1);
+
+    }
+    99%{
+        opacity: 1;
+        z-index: 1;
+
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+        z-index: -1;
+
+    }
+}
+@keyframes mixed-logo {
+    0% {
+        color: hsl(0, 0%, 0%);
+        transform: rotate(0);
+        z-index: 1;
+    }
+    14% {
+        color: hsl(267,66%,60%);
+        transform: rotate(25deg);
+    }
+    26%{
+        color: hsl(317,100%,74%);
+        transform: rotate(90deg);
+    } 
+    38% {
+        color: hsl(165,56%,74%);
+        transform: rotate(155deg);
+    } 
+    50% {
+        color: hsl(165,56%,74%);
+        transform: rotate(180deg);
+    }
+    62% {
+        color: hsl(267,66%,60%);
+        transform: rotate(205deg);
+    }
+    74%{
+        color: hsl(317,100%,74%);
+        transform: rotate(270deg);
+    }
+    86%{
+        color: hsl(165,56%,74%);
+        transform: rotate(335deg);
+    }
+    99%{
+        opacity: 1;
+        z-index: 1;
+    }
+    100%{
+        color: hsl(0,0%,0%);
+        transform: rotate(360deg);
+        opacity: 0;
+        z-index: -1;
+    }
+}
