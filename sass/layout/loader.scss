@@ -6,7 +6,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    animation: font $anim-dur both;
+    animation: font $anim-dur-loader both;
 }
 
 .load{
@@ -18,7 +18,7 @@
     &__logo {
         font-size: 5em;
         font-family: 'Shrikhand', sans-serif;
-        animation: mixed-logo $anim-dur forwards;
+        animation: mixed-logo $anim-dur-loader forwards;
     }
     &__points{
         display: flex;
@@ -27,15 +27,15 @@
         justify-content: space-between;
         &--1, &--6{
             background-color: $color-primary;
-            animation: mixed-points1 $anim-dur forwards;
+            animation: mixed-points1 $anim-dur-loader forwards;
         }
         &--2, &--5{
             background-color: $color-secondary;
-            animation: mixed-points2 $anim-dur forwards;
+            animation: mixed-points2 $anim-dur-loader forwards;
         }
         &--3, &--4{
             background-color: $color-tertiary;
-            animation: mixed-points3 $anim-dur forwards;
+            animation: mixed-points3 $anim-dur-loader forwards;
         }
         &--99 {
             height: 3em;

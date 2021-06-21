@@ -27,11 +27,17 @@ p{
     }
     &__choice{
         display: flex;
-        margin: 2em 0;
         align-items: start;
-        }
+        margin-bottom: 1em;
+    }
     &__header{
-        text-decoration: underline $color-tertiary 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__underline{
+    width: 10%;
+    height: 3px;
+    background-color: #99E2D0;
     }
 }
 .dish{
@@ -41,13 +47,18 @@ p{
 }
 .choice{
     display: flex;
-    margin: 0 1em;
     flex-direction: row;
     border-radius: 1em;
+    box-shadow: 5px 5px 5px $color-title;
     background-color: white;
     margin: 1em;
     align-items: center;
-
+    animation: apperance $anim-dur-menu both;
+    @for $i from 1 through 4 {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
     &__name {
         margin: 5%;
         width: 85%;
@@ -70,7 +81,7 @@ p{
             flex-direction: column;
         }
         &__header {
-            justify-content: start;
+            align-items: flex-start;
             margin: 5%;
         }
     }
