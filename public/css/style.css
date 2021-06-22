@@ -238,7 +238,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  animation: font 4000ms both;
+  animation: font 40ms both;
 }
 
 .load {
@@ -251,7 +251,7 @@ a {
 .load__logo {
   font-size: 5em;
   font-family: "Shrikhand", sans-serif;
-  animation: mixed-logo 4000ms forwards;
+  animation: mixed-logo 40ms forwards;
 }
 .load__points {
   display: flex;
@@ -261,15 +261,15 @@ a {
 }
 .load__points--1, .load__points--6 {
   background-color: #9356DC;
-  animation: mixed-points1 4000ms forwards;
+  animation: mixed-points1 40ms forwards;
 }
 .load__points--2, .load__points--5 {
   background-color: #FF79DA;
-  animation: mixed-points2 4000ms forwards;
+  animation: mixed-points2 40ms forwards;
 }
 .load__points--3, .load__points--4 {
   background-color: #99E2D0;
-  animation: mixed-points3 4000ms forwards;
+  animation: mixed-points3 40ms forwards;
 }
 .load__points--99 {
   height: 3em;
@@ -315,8 +315,29 @@ i.fa-map-marker-alt {
   color: grey;
 }
 
-i.fa-heart {
-  color: red;
+.logo__coeur {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+.logo__coeur:after {
+  content: "";
+  color: #ff79da;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo__coeur:hover:after {
+  content: "";
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*bloc présentation*/
@@ -385,7 +406,7 @@ i.fa-heart {
 .restaurants {
   background-color: #f2f2f2;
   display: flex;
-  height: 52em;
+  height: 54em;
 }
 .restaurants__list--selected {
   display: grid;
