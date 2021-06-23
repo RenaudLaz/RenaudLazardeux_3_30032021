@@ -197,6 +197,85 @@ a {
     transform: translateY(0em);
   }
 }
+@keyframes coche {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+    transform-origin: 100% 100%;
+  }
+  1% {
+    transform: scaleX(0);
+    opacity: 0;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+    transform-origin: 100% 100%;
+  }
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes price {
+  0% {
+    transform: translate(0em);
+  }
+  1% {
+    transform: translate(0em);
+  }
+  100% {
+    transform: translatex(-2.5em);
+  }
+}
+i.fa-arrow-left {
+  position: absolute;
+  top: 2em;
+  left: 30px;
+}
+
+i.fa-map-marker-alt {
+  width: 1em;
+  height: 1em;
+}
+
+.order__logo {
+  margin-right: 1.5em;
+  color: grey;
+}
+
+.logo__coeur {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+.logo__coeur:after {
+  content: "";
+  color: #ff79da;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo__coeur:hover:after {
+  content: "";
+  color: transparent;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .btn {
   padding: 20px;
   text-align: center;
@@ -238,7 +317,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  animation: font 40ms both;
+  animation: font 400ms both;
 }
 
 .load {
@@ -251,7 +330,7 @@ a {
 .load__logo {
   font-size: 5em;
   font-family: "Shrikhand", sans-serif;
-  animation: mixed-logo 40ms forwards;
+  animation: mixed-logo 400ms forwards;
 }
 .load__points {
   display: flex;
@@ -261,15 +340,15 @@ a {
 }
 .load__points--1, .load__points--6 {
   background-color: #9356DC;
-  animation: mixed-points1 40ms forwards;
+  animation: mixed-points1 400ms forwards;
 }
 .load__points--2, .load__points--5 {
   background-color: #FF79DA;
-  animation: mixed-points2 40ms forwards;
+  animation: mixed-points2 400ms forwards;
 }
 .load__points--3, .load__points--4 {
   background-color: #99E2D0;
-  animation: mixed-points3 40ms forwards;
+  animation: mixed-points3 400ms forwards;
 }
 .load__points--99 {
   height: 3em;
@@ -297,47 +376,6 @@ header {
   align-items: center;
   text-align: center;
   margin: 1em 0;
-}
-
-i.fa-arrow-left {
-  position: absolute;
-  top: 2em;
-  left: 30px;
-}
-
-i.fa-map-marker-alt {
-  width: 1em;
-  height: 1em;
-}
-
-.order__logo {
-  margin-right: 1.5em;
-  color: grey;
-}
-
-.logo__coeur {
-  display: inline-block;
-  position: relative;
-  font-size: 30px;
-  color: black;
-  cursor: pointer;
-}
-.logo__coeur:after {
-  content: "";
-  color: #ff79da;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.logo__coeur:hover:after {
-  content: "";
-  color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 /*bloc présentation*/
@@ -607,7 +645,7 @@ p {
 .menu__choice {
   display: flex;
   align-items: start;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 .menu__header {
   display: flex;
@@ -621,18 +659,22 @@ p {
 
 .dish {
   display: flex;
+  flex-wrap: wrap;
   width: 33%;
   flex-direction: column;
 }
 
 .choice {
   display: flex;
+  width: 85%;
+  height: 3.5em;
   flex-direction: row;
   border-radius: 1em;
   box-shadow: 5px 5px 5px #e6e6e6;
   background-color: white;
   margin: 1em;
   align-items: center;
+  cursor: pointer;
   animation: apperance 800ms both;
 }
 .choice--1 {
@@ -648,12 +690,46 @@ p {
   animation-delay: 800ms;
 }
 .choice__name {
+  font-size: 0.9em;
   margin: 5%;
   width: 85%;
 }
 .choice__price {
   width: 15%;
   font-weight: bold;
+}
+
+.choice:hover > .choice__price {
+  animation: price 1200ms forwards;
+}
+
+/*Coche de validation*/
+.choice:hover > .check {
+  animation: coche 1200ms forwards;
+}
+
+/*Coche de validation*/
+.choice:hover + .coche {
+  animation: rotate 1200ms forwards;
+}
+
+.check {
+  display: flex;
+  opacity: 0;
+  border: none;
+  border-radius: 0 1em 1em 0;
+  background-color: #99E2D0;
+  width: 3.5em;
+  height: 3.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.coche {
+  color: #99E2D0;
+  border: solid 0.2em white;
+  border-radius: 100%;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 798px) {
@@ -671,7 +747,7 @@ p {
   }
   .menu__header {
     align-items: flex-start;
-    margin: 5%;
+    margin: 15% 5% 0 5%;
   }
 
   .dish {

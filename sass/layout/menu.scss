@@ -28,7 +28,7 @@ p{
     &__choice{
         display: flex;
         align-items: start;
-        margin-bottom: 1em;
+        margin: 1em 0;
     }
     &__header{
         display: flex;
@@ -42,17 +42,21 @@ p{
 }
 .dish{
     display: flex;
+    flex-wrap: wrap;
     width: 33%;
     flex-direction: column;
 }
 .choice{
     display: flex;
+    width: 85%;
+    height: 3.5em;
     flex-direction: row;
     border-radius: 1em;
     box-shadow: 5px 5px 5px $color-title;
     background-color: white;
     margin: 1em;
     align-items: center;
+    cursor: pointer;
     animation: apperance $anim-dur-menu both;
     @for $i from 1 through 4 {
         &--#{$i} {
@@ -60,6 +64,7 @@ p{
         }
     }
     &__name {
+        font-size: 0.9em;
         margin: 5%;
         width: 85%;
     }
@@ -67,7 +72,39 @@ p{
         width: 15%;
         font-weight: bold;
     }
+       
 }
+.choice:hover > .choice__price {
+    animation: price $anim-dur forwards;
+}
+/*Coche de validation*/
+.choice:hover > .check {
+    animation: coche $anim-dur forwards;
+}
+/*Coche de validation*/
+.choice:hover + .coche {
+    animation: rotate $anim-dur forwards;
+}
+.check {
+    display: flex;
+    opacity: 0;
+    border: none;
+    border-radius: 0 1em 1em 0;
+    background-color:$color-tertiary;
+    width: 3.5em;
+    height: 3.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.coche {
+    color: $color-tertiary;
+    border: solid 0.2em white;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+
 @media screen and (max-width: 798px) {
     .menu__img {
         height: 15em;
@@ -82,7 +119,7 @@ p{
         }
         &__header {
             align-items: flex-start;
-            margin: 5%;
+            margin: 15% 5% 0 5%;
         }
     }
     .dish{

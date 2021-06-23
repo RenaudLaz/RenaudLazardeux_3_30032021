@@ -154,3 +154,41 @@
         transform:translateY(0em);
     }
 }
+@keyframes coche {
+    0% {
+        transform:scaleX(0);
+        opacity: 0;
+        transform-origin: 100% 100%;
+    }
+    1% {
+        transform:scaleX(0);
+        opacity: 0;
+        transform-origin: 100% 100%;
+    }
+    100% {
+        transform:scaleX(1);
+        opacity: 1;
+        transform-origin: 100% 100%;
+    }
+}
+@keyframes rotate360 {
+    0% {
+        transform:rotate(0deg);
+        opacity: 0;
+    }  
+    100% {
+        transform:rotate(360deg);
+        opacity: 1;
+    }
+}
+@keyframes price{
+    0% {
+        transform:translate(0em);
+    }
+    1% {
+        transform:translate(0em);
+    }
+    100% {
+        transform:translatex(-2.5em);
+    }
+}
