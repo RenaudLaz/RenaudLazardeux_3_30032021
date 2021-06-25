@@ -13,27 +13,18 @@ i.fa-map-marker-alt {
 }
 
 .logo__coeur{
-    display: inline-block;
-    position: relative;
-    font-size: 30px;
     color: black;
     cursor: pointer;
-          
-  &:after {
-      content: "\f08a";
-      color: #ff79da;
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-  &:hover:after {
-      content: "\f004";
-      color: transparent;
-      background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
-      background-clip: border-box;
+      &:hover {
+      animation: 0.3s ease-in-out;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(to bottom left, $color-primary,$color-secondary);
+      background:-webkit-linear-gradient(to bottom left, $color-primary, $color-secondary);
+      background-clip: text;
       -webkit-background-clip: text;
-      position: absolute;
-      top: 0;
-      left: 0;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
   }
+
 }

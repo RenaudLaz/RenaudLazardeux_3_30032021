@@ -13,11 +13,11 @@
         text-align: center;
     }
     &__resume {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-secondary,
-            $color-primary,
-        );
+        background-image: linear-gradient(to right bottom, $color-secondary, $color-primary);
+        &:hover{
+            opacity: 0.8;
+            box-shadow: 5px 5px 5px grey;
+        }
     }
 }
 .btn__order{

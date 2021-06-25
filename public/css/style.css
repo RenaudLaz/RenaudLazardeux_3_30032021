@@ -199,16 +199,22 @@ a {
 }
 @keyframes coche {
   0% {
+    width: 3.5em;
+    height: 3.5em;
     transform: scaleX(0);
     opacity: 0;
     transform-origin: 100% 100%;
   }
   1% {
+    width: 3.5em;
+    height: 3.5em;
     transform: scaleX(0);
     opacity: 0;
     transform-origin: 100% 100%;
   }
   100% {
+    width: 3.5em;
+    height: 3.5em;
     transform: scaleX(1);
     opacity: 1;
     transform-origin: 100% 100%;
@@ -218,6 +224,10 @@ a {
   0% {
     transform: rotate(0deg);
     opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
@@ -232,7 +242,7 @@ a {
     transform: translate(0em);
   }
   100% {
-    transform: translatex(-2.5em);
+    transform: translatex(-3.5em);
   }
 }
 i.fa-arrow-left {
@@ -252,28 +262,19 @@ i.fa-map-marker-alt {
 }
 
 .logo__coeur {
-  display: inline-block;
-  position: relative;
-  font-size: 30px;
   color: black;
   cursor: pointer;
 }
-.logo__coeur:after {
-  content: "";
-  color: #ff79da;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.logo__coeur:hover:after {
-  content: "";
-  color: transparent;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
-  background-clip: border-box;
+.logo__coeur:hover {
+  animation: 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(to bottom left, #9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
-  position: absolute;
-  top: 0;
-  left: 0;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .btn {
@@ -293,6 +294,10 @@ i.fa-map-marker-alt {
 }
 .btn__resume {
   background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+}
+.btn__resume:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px grey;
 }
 
 .btn__order {
@@ -317,7 +322,7 @@ i.fa-map-marker-alt {
   left: 0;
   height: 100%;
   width: 100%;
-  animation: font 400ms both;
+  animation: font 3000ms both;
 }
 
 .load {
@@ -330,7 +335,7 @@ i.fa-map-marker-alt {
 .load__logo {
   font-size: 5em;
   font-family: "Shrikhand", sans-serif;
-  animation: mixed-logo 400ms forwards;
+  animation: mixed-logo 3000ms forwards;
 }
 .load__points {
   display: flex;
@@ -340,15 +345,15 @@ i.fa-map-marker-alt {
 }
 .load__points--1, .load__points--6 {
   background-color: #9356DC;
-  animation: mixed-points1 400ms forwards;
+  animation: mixed-points1 3000ms forwards;
 }
 .load__points--2, .load__points--5 {
   background-color: #FF79DA;
-  animation: mixed-points2 400ms forwards;
+  animation: mixed-points2 3000ms forwards;
 }
 .load__points--3, .load__points--4 {
   background-color: #99E2D0;
-  animation: mixed-points3 400ms forwards;
+  animation: mixed-points3 3000ms forwards;
 }
 .load__points--99 {
   height: 3em;
@@ -666,7 +671,7 @@ p {
 
 .choice {
   display: flex;
-  width: 85%;
+  width: 90%;
   height: 3.5em;
   flex-direction: row;
   border-radius: 1em;
@@ -695,6 +700,8 @@ p {
   width: 85%;
 }
 .choice__price {
+  display: inline-flex;
+  align-items: center;
   width: 15%;
   font-weight: bold;
 }
@@ -704,12 +711,12 @@ p {
 }
 
 /*Coche de validation*/
-.choice:hover > .check {
+.choice:hover .check {
   animation: coche 1200ms forwards;
 }
 
 /*Coche de validation*/
-.choice:hover + .coche {
+.choice:hover .coche {
   animation: rotate 1200ms forwards;
 }
 
@@ -719,8 +726,8 @@ p {
   border: none;
   border-radius: 0 1em 1em 0;
   background-color: #99E2D0;
-  width: 3.5em;
-  height: 3.5em;
+  width: 0.1em;
+  height: 0.1em;
   align-items: center;
   justify-content: center;
 }

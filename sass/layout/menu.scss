@@ -48,7 +48,7 @@ p{
 }
 .choice{
     display: flex;
-    width: 85%;
+    width: 90%;
     height: 3.5em;
     flex-direction: row;
     border-radius: 1em;
@@ -69,6 +69,8 @@ p{
         width: 85%;
     }
     &__price{
+        display: inline-flex;
+        align-items: center;
         width: 15%;
         font-weight: bold;
     }
@@ -78,11 +80,11 @@ p{
     animation: price $anim-dur forwards;
 }
 /*Coche de validation*/
-.choice:hover > .check {
+.choice:hover .check {
     animation: coche $anim-dur forwards;
 }
 /*Coche de validation*/
-.choice:hover + .coche {
+.choice:hover .coche {
     animation: rotate $anim-dur forwards;
 }
 .check {
@@ -91,8 +93,8 @@ p{
     border: none;
     border-radius: 0 1em 1em 0;
     background-color:$color-tertiary;
-    width: 3.5em;
-    height: 3.5em;
+    width: 0.1em;
+    height: 0.1em;
     align-items: center;
     justify-content: center;
 }
