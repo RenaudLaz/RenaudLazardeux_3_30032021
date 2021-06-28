@@ -78,8 +78,8 @@
         &__list--selected {
             display: grid;
             grid-template-columns: 5% 42% 6% 42% 5%;
-            grid-template-rows: 42% 12% 42% 4%;
-            height: 40em;
+            grid-template-rows: 44% 8% 44% 4%;
+            height: 50em;
 
             &--1{
                 @include grid;
@@ -162,6 +162,7 @@
     .restaurants {
         height: auto;
         &__list--selected {
+            height: 40em;
             grid-template-rows: 11.5em 2em 11.5em 2em 11.5em 2em 11.5em 2em;
             grid-template-columns: 5% 90% 5%;
             

@@ -203,21 +203,21 @@ a {
     height: 3.5em;
     transform: scaleX(0);
     opacity: 0;
-    transform-origin: 100% 100%;
+    transform-origin: 100% 50%;
   }
   1% {
     width: 3.5em;
     height: 3.5em;
     transform: scaleX(0);
     opacity: 0;
-    transform-origin: 100% 100%;
+    transform-origin: 100% 50%;
   }
   100% {
     width: 3.5em;
     height: 3.5em;
     transform: scaleX(1);
     opacity: 1;
-    transform-origin: 100% 100%;
+    transform-origin: 100% 50%;
   }
 }
 @keyframes rotate360 {
@@ -225,12 +225,8 @@ a {
     transform: rotate(0deg);
     opacity: 0;
   }
-  50% {
-    transform: rotate(180deg);
-    opacity: 1;
-  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
     opacity: 1;
   }
 }
@@ -456,8 +452,8 @@ header {
 .restaurants__list--selected {
   display: grid;
   grid-template-columns: 5% 42% 6% 42% 5%;
-  grid-template-rows: 42% 12% 42% 4%;
-  height: 40em;
+  grid-template-rows: 44% 8% 44% 4%;
+  height: 50em;
 }
 .restaurants__list--selected--1 {
   height: 19em;
@@ -551,6 +547,7 @@ header {
     height: auto;
   }
   .restaurants__list--selected {
+    height: 40em;
     grid-template-rows: 11.5em 2em 11.5em 2em 11.5em 2em 11.5em 2em;
     grid-template-columns: 5% 90% 5%;
   }
@@ -674,6 +671,7 @@ p {
 }
 
 .choice {
+  position: relative;
   display: flex;
   width: 90%;
   height: 3.5em;
@@ -685,6 +683,7 @@ p {
   align-items: center;
   cursor: pointer;
   animation: apperance 800ms both;
+  overflow: hidden;
 }
 .choice--1 {
   animation-delay: 200ms;
@@ -699,7 +698,7 @@ p {
   animation-delay: 800ms;
 }
 .choice__name {
-  font-size: 0.9em;
+  display: block;
   margin: 5%;
   width: 85%;
 }
@@ -710,18 +709,18 @@ p {
   font-weight: bold;
 }
 
-.choice:hover > .choice__price {
+.choice:hover .choice__price {
   animation: price 1200ms forwards;
 }
 
-/*Coche de validation*/
+/*Bloc coche de validation*/
 .choice:hover .check {
   animation: coche 1200ms forwards;
 }
 
-/*Coche de validation*/
+/*Bloc coche de validation*/
 .choice:hover .coche {
-  animation: rotate 1200ms forwards;
+  animation: rotate360 1200ms forwards;
 }
 
 .check {
@@ -734,6 +733,8 @@ p {
   height: 0.1em;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: -0.1em;
 }
 
 .coche {
@@ -751,7 +752,7 @@ p {
   .menu {
     top: -30px;
     width: 100%;
-    margin: 0 0 -30px 0;
+    margin: 0 0 -300px 0;
   }
   .menu__choice {
     flex-direction: column;
