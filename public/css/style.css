@@ -322,7 +322,7 @@ i.fa-map-marker-alt {
   left: 0;
   height: 100%;
   width: 100%;
-  animation: font 3000ms both;
+  animation: font 30ms both;
 }
 
 .load {
@@ -335,7 +335,7 @@ i.fa-map-marker-alt {
 .load__logo {
   font-size: 5em;
   font-family: "Shrikhand", sans-serif;
-  animation: mixed-logo 3000ms forwards;
+  animation: mixed-logo 30ms forwards;
 }
 .load__points {
   display: flex;
@@ -345,15 +345,15 @@ i.fa-map-marker-alt {
 }
 .load__points--1, .load__points--6 {
   background-color: #9356DC;
-  animation: mixed-points1 3000ms forwards;
+  animation: mixed-points1 30ms forwards;
 }
 .load__points--2, .load__points--5 {
   background-color: #FF79DA;
-  animation: mixed-points2 3000ms forwards;
+  animation: mixed-points2 30ms forwards;
 }
 .load__points--3, .load__points--4 {
   background-color: #99E2D0;
-  animation: mixed-points3 3000ms forwards;
+  animation: mixed-points3 30ms forwards;
 }
 .load__points--99 {
   height: 3em;
@@ -449,12 +449,15 @@ header {
 .restaurants {
   background-color: #f2f2f2;
   display: flex;
-  height: 54em;
+}
+.restaurants__list {
+  width: 100%;
 }
 .restaurants__list--selected {
   display: grid;
   grid-template-columns: 5% 42% 6% 42% 5%;
-  grid-template-rows: 42% 16% 42%;
+  grid-template-rows: 42% 12% 42% 4%;
+  height: 40em;
 }
 .restaurants__list--selected--1 {
   height: 19em;
@@ -548,7 +551,7 @@ header {
     height: auto;
   }
   .restaurants__list--selected {
-    grid-template-rows: 12em 1em 12em 1em 12em 1em 12em 2em;
+    grid-template-rows: 11.5em 2em 11.5em 2em 11.5em 2em 11.5em 2em;
     grid-template-columns: 5% 90% 5%;
   }
   .restaurants__list--selected--1 {
@@ -608,6 +611,7 @@ header {
 
 @media screen and (max-width: 798px) {
   .footer {
+    margin-top: 14em;
     text-align: start;
   }
   .footer__link {
