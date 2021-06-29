@@ -60,7 +60,7 @@
             align-items: center;
         }
         &:hover {
-            background-color: $color-primary-light;
+            background-color: $color-primary-light30;
         }
     }
 
@@ -74,7 +74,6 @@
     &__list{
         width: 100%;
     }
-
         &__list--selected {
             display: grid;
             grid-template-columns: 5% 42% 6% 42% 5%;
@@ -87,6 +86,7 @@
                 grid-column-end: 2;
                 grid-row-start: 1;
                 grid-row-end: 1;
+                cursor: pointer;
             }
             &--2{
                 @include grid;
@@ -94,6 +94,7 @@
                 grid-column-end: 4;
                 grid-row-start: 1;
                 grid-row-end: 1;
+                cursor: pointer;
             }
             &--3{
                 @include grid;
@@ -101,6 +102,7 @@
                 grid-column-end: 2;
                 grid-row-start: 3;
                 grid-row-end: 3;
+                cursor: pointer;
             }
             &--4{
                 @include grid;
@@ -108,13 +110,14 @@
                 grid-column-end: 4;
                 grid-row-start: 3;
                 grid-row-end: 3;
+                cursor: pointer;
             }
             
         }
         &__img {
             border-radius: 1.5em 1.5em 0 0;
             object-fit: cover;
-            height: 15.5em;
+            height: 16em;
             width: 100%;
         }
         &__description{
@@ -140,7 +143,7 @@
     border-radius: 5px;
     padding: 5px;
     background-color: $color-tertiary;
-    color: $color-new;
+    color: $color-tertiary-dark40;
     }
     &__photo{
     display: block;
@@ -160,35 +163,35 @@
         width: 90%;
     }
     .restaurants {
-        height: auto;
+        height: 45em;
         &__list--selected {
-            height: 40em;
-            grid-template-rows: 11.5em 2em 11.5em 2em 11.5em 2em 11.5em 2em;
+            height: 54em;
+            grid-template-rows: 11.5em 2em 11.5em 2em 11.5em 2em 11.5em;
             grid-template-columns: 5% 90% 5%;
             
             &--1{
-                height: 12em;
+                height: 11.8em;
                 grid-column-start: 2;
                 grid-column-end: 2;
                 grid-row-start: 1;
                 grid-row-end: 1;
             }
             &--2{
-                height: 12em;
+                height: 11.8em;
                 grid-column-start: 2;
                 grid-column-end: 2;
                 grid-row-start: 3;
                 grid-row-end: 3;
             }
             &--3{
-                height: 12em;
+                height: 11.8em;
                 grid-column-start: 2;
                 grid-column-end: 2;
                 grid-row-start: 5;
                 grid-row-end: 5;
             }
             &--4{
-                height: 12em;
+                height: 11.8em;
                 grid-column-start: 2;
                 grid-column-end: 2;
                 grid-row-start: 7;

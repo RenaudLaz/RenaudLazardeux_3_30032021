@@ -464,6 +464,7 @@ header {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+  cursor: pointer;
 }
 .restaurants__list--selected--2 {
   height: 19em;
@@ -474,6 +475,7 @@ header {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
+  cursor: pointer;
 }
 .restaurants__list--selected--3 {
   height: 19em;
@@ -484,6 +486,7 @@ header {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 3;
+  cursor: pointer;
 }
 .restaurants__list--selected--4 {
   height: 19em;
@@ -494,11 +497,12 @@ header {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 3;
+  cursor: pointer;
 }
 .restaurants__img {
   border-radius: 1.5em 1.5em 0 0;
   object-fit: cover;
-  height: 15.5em;
+  height: 16em;
   width: 100%;
 }
 .restaurants__description {
@@ -544,36 +548,36 @@ header {
   }
 
   .restaurants {
-    height: auto;
+    height: 45em;
   }
   .restaurants__list--selected {
-    height: 40em;
-    grid-template-rows: 11.5em 2em 11.5em 2em 11.5em 2em 11.5em 2em;
+    height: 54em;
+    grid-template-rows: 11.5em 2em 11.5em 2em 11.5em 2em 11.5em;
     grid-template-columns: 5% 90% 5%;
   }
   .restaurants__list--selected--1 {
-    height: 12em;
+    height: 11.8em;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
   }
   .restaurants__list--selected--2 {
-    height: 12em;
+    height: 11.8em;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 3;
   }
   .restaurants__list--selected--3 {
-    height: 12em;
+    height: 11.8em;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 5;
   }
   .restaurants__list--selected--4 {
-    height: 12em;
+    height: 11.8em;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 7;
@@ -683,7 +687,6 @@ p {
   align-items: center;
   cursor: pointer;
   animation: apperance 800ms both;
-  overflow: hidden;
 }
 .choice--1 {
   animation-delay: 200ms;
@@ -698,15 +701,27 @@ p {
   animation-delay: 800ms;
 }
 .choice__name {
-  display: block;
   margin: 5%;
-  width: 85%;
+  width: 70%;
 }
 .choice__price {
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   width: 15%;
   font-weight: bold;
+}
+
+.choice__name h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.choice__name p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .choice:hover .choice__price {
@@ -734,7 +749,7 @@ p {
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: -0.1em;
+  right: 0em;
 }
 
 .coche {

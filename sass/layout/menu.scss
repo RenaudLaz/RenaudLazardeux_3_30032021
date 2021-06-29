@@ -59,7 +59,6 @@ p{
     align-items: center;
     cursor: pointer;
     animation: apperance $anim-dur-menu both;
-    overflow: hidden;
     
     @for $i from 1 through 4 {
         &--#{$i} {
@@ -67,18 +66,24 @@ p{
         }
     }
     &__name {
-        display: block;
         margin: 5%;
-        width: 85%;
+        width: 70%;
    }
     &__price{
-        display: inline-flex;
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
         width: 15%;
         font-weight: bold;
     }
-       
 }
+.choice__name h3 {
+   @include ellipsis;
+}
+.choice__name p {
+    @include ellipsis;
+}
+
 .choice:hover .choice__price {
     animation: price $anim-dur forwards;
 }
@@ -101,7 +106,7 @@ p{
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: -0.1em;
+    right: 0em;
 }
 
 .coche {
