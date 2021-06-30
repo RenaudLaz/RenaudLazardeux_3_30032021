@@ -698,12 +698,12 @@ p {
 }
 .choice__name {
   margin: 5%;
-  width: 70%;
+  width: 75%;
 }
 .choice__price {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  padding: 1em 0.5em 0 0;
   width: 15%;
   font-weight: bold;
 }
@@ -722,6 +722,11 @@ p {
 
 .choice:hover .choice__price {
   animation: price 1200ms forwards;
+  width: 25%;
+}
+
+.choice:hover .choice__name {
+  width: 60%;
 }
 
 /*Bloc coche de validation*/

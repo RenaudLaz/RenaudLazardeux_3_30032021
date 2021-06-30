@@ -67,12 +67,12 @@ p{
     }
     &__name {
         margin: 5%;
-        width: 70%;
+        width: 75%;
    }
     &__price{
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        padding: 1em 0.5em 0 0;
         width: 15%;
         font-weight: bold;
     }
@@ -86,7 +86,12 @@ p{
 
 .choice:hover .choice__price {
     animation: price $anim-dur forwards;
+    width: 25%;
 }
+.choice:hover .choice__name {
+    width: 60%;
+}
+
 /*Bloc coche de validation*/
 .choice:hover .check {
     animation: coche $anim-dur forwards;
