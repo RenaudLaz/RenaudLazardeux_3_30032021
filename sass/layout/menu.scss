@@ -4,7 +4,6 @@ p{
 .menu{
     position: relative;
     display: flex;
-    height: auto;
     top: -100px;
     flex-direction: column;
     background-color: $color-title2;
@@ -123,13 +122,10 @@ p{
 
 
 @media screen and (max-width: 798px) {
-    .menu__img {
-        height: 15em;
-    }
     .menu{
         top: -30px;
         width: 100%;
-        margin: 0 0 -300px 0;
+        margin: 0 0 -30px 0;
        
         &__choice{
             flex-direction: column;
@@ -137,6 +133,9 @@ p{
         &__header {
             align-items: flex-start;
             margin: 15% 5% 0 5%;
+        }
+        &__img {
+            height: 15em;
         }
     }
     .dish{

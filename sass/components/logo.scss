@@ -20,10 +20,10 @@ i.fa-map-marker-alt {
       display: inline-block;
       opacity: 1;
       background:linear-gradient(to bottom left, $color-primary,$color-secondary);
-      background:-webkit-linear-gradient(to bottom left, $color-primary, $color-secondary);
-      background-clip: text;
+      -webkit-linear-gradient:(to bottom left, $color-primary, $color-secondary);
+      background-clip: border-box;
       -webkit-background-clip: text;
-      -webkit-text-fill-color:transparent;
+      -webkit-text-fill-color: transparent;
       font-weight: bold;
   }
 

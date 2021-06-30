@@ -266,8 +266,8 @@ i.fa-map-marker-alt {
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to bottom left, #9356DC, #FF79DA);
-  background: -webkit-linear-gradient(to bottom left, #9356DC, #FF79DA);
-  background-clip: text;
+  -webkit-linear-gradient: to bottom left, #9356DC, #FF79DA;
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -523,7 +523,7 @@ header {
   top: 5%;
   right: 5%;
   font-size: 0.6em;
-  border: solid 1px #99E2D0;
+  border: solid 1px transparent;
   border-radius: 5px;
   padding: 5px;
   background-color: #99E2D0;
@@ -627,7 +627,6 @@ p {
 .menu {
   position: relative;
   display: flex;
-  height: auto;
   top: -100px;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -761,14 +760,10 @@ p {
 }
 
 @media screen and (max-width: 798px) {
-  .menu__img {
-    height: 15em;
-  }
-
   .menu {
     top: -30px;
     width: 100%;
-    margin: 0 0 -300px 0;
+    margin: 0 0 -30px 0;
   }
   .menu__choice {
     flex-direction: column;
@@ -776,6 +771,9 @@ p {
   .menu__header {
     align-items: flex-start;
     margin: 15% 5% 0 5%;
+  }
+  .menu__img {
+    height: 15em;
   }
 
   .dish {
