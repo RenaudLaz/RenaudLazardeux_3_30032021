@@ -547,9 +547,6 @@ header {
     width: 90%;
   }
 
-  .restaurants {
-    height: 45em;
-  }
   .restaurants__list--selected {
     height: 54em;
     grid-template-rows: 11.5em 2em 11.5em 2em 11.5em 2em 11.5em;
@@ -612,7 +609,6 @@ header {
 
 @media screen and (max-width: 798px) {
   .footer {
-    margin-top: 14em;
     text-align: start;
   }
   .footer__link {
