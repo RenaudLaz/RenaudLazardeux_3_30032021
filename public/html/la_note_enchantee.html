@@ -30,7 +30,7 @@
         <div class="menu">
             <div class="menu__title">
                 <h2>La Note enchantée</h2>
-                <svg id='heart' height="0" width="0" viewBox="0 0 40 40">
+                <svg class='heart' height="0" width="0" viewBox="0 0 40 40">
                     <defs>
                         <clipPath id="svgPath">
                                 <path fill=transparent d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z"/>
@@ -39,12 +39,13 @@
                 </svg>
 
                 <div class="heart-container">
-                        <a href='#' class='heart-clip'>
-                            <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>       
-                                    <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                            </svg>
-                        </a>
-                </div>            </div>
+                    <div class="heart-clip">
+                        <svg width="40" height="40" viewBox="0 0 40 40" class="heart-stroke">       
+                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                        </svg>
+                    </div>
+                </div>  
+            </div>
             
             <section class="menu__choice">
                 <article class="dish">
@@ -54,7 +55,7 @@
                     </header>
                     <div class="choice choice--1">
                         <div class="choice__name">
-                            <h4>Ravioles de foie gras</h4>
+                            <h3>Ravioles de foie gras</h3>
                             <p>Accompagnés de leur crème à la truffe</p>
                         </div>
                         <div class="choice__price">
@@ -66,7 +67,7 @@
                     </div>
                     <div class="choice choice--2">
                         <div class="choice__name">
-                            <h4>Caviar osciètre</h4>
+                            <h3>Caviar osciètre</h3>
                             <p>Sur blini à la farine de blé noir</p>
                         </div>
                         <div class="choice__price">
@@ -78,7 +79,7 @@
                     </div>
                     <div class="choice choice--3">
                         <div class="choice__name">
-                            <h4>Homard et espuma de potiron</h4>
+                            <h3>Homard et espuma de potiron</h3>
                             <p>Mariné aux zestes d'orange</p>
                         </div>
                         <div class="choice__price">
@@ -90,7 +91,7 @@
                     </div>
                     <div class="choice choice--4">
                         <div class="choice__name">
-                            <h4>Foie gras de canard cuit entier</h4>
+                            <h3>Foie gras de canard cuit entier</h3>
                             <p>Confiture de figue et pain toasté</p>
                         </div>
                         <div class="choice__price">
@@ -109,7 +110,7 @@
                     </header>
                     <div class="choice choice--1">
                         <div class="choice__name">
-                        <h4>Noix de coquilles Saint-Jacques</h4>
+                        <h3>Noix de coquilles Saint-Jacques</h3>
                         <p>Sur lit de purée de céleri-rave</p>
                     </div>
                         <div class="choice__price">
@@ -121,7 +122,7 @@
                     </div>
                     <div class="choice choice--2">
                         <div class="choice__name">
-                        <h4>Langoustine poêlée</h4>
+                        <h3>Langoustine poêlée</h3>
                         <p>Purée de patate douce</p>
                     </div>
                         <div class="choice__price">
@@ -133,7 +134,7 @@
                     </div>
                     <div class="choice choice--3">
                         <div class="choice__name">
-                        <h4>Mijoté de queue de boeuf </h4>
+                        <h3>Mijoté de queue de boeuf </h3>
                         <p>Et riz sauvage aux zestes de citron</p>
                     </div>
                         <div class="choice__price">
@@ -152,7 +153,7 @@
                     </header>
                     <div class="choice choice--1">
                         <div class="choice__name">
-                        <h4>Macaron noisette et chocolat</h4>
+                        <h3>Macaron noisette et chocolat</h3>
                         <p>Glace au caramel brun et sel de Guérande</p>
                         </div>
                         <div class="choice__price">
@@ -164,7 +165,7 @@
                     </div>
                     <div class="choice choice--2">
                         <div class="choice__name">
-                        <h4>Baba au rhum revisité </h4>
+                        <h3>Baba au rhum revisité </h3>
                         <p>Avec son coulis de citron</p>
                         </div>
                         <div class="choice__price">
@@ -176,7 +177,7 @@
                     </div>
                     <div class="choice choice--3">
                         <div class="choice__name">
-                        <h4>Tarte au citron meringuée</h4>
+                        <h3>Tarte au citron meringuée</h3>
                         <p>Déstructurée</p>
                         </div>
                         <div class="choice__price">

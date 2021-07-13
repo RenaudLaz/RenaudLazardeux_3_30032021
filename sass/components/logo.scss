@@ -12,19 +12,9 @@ i.fa-map-marker-alt {
     color: grey;
 }
 
-
-
-
-
-
-
-
-$color1:#FF79DA;
-$color2: #9356DC;
-
+/*Coeur*/
 .heart-container {
    position: relative;
-   top:-8px;
    width: 40px;
    height: 40px;
 }
@@ -35,7 +25,6 @@ $color2: #9356DC;
     height: 100%;
     position: relative;
     clip-path: url(#svgPath);
-
    &:hover {  
       &::before {
          transform: scale(1);
@@ -64,5 +53,6 @@ $color2: #9356DC;
         left: 0;
         z-index: -1;
     }
+/*Coeur*/
 
 
