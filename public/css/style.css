@@ -678,6 +678,9 @@ p {
   align-items: start;
   margin: 1em 0;
 }
+.menu__choice--header {
+  display: none;
+}
 .menu__header {
   display: flex;
   flex-direction: column;

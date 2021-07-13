@@ -28,6 +28,9 @@ p{
         display: flex;
         align-items: start;
         margin: 1em 0;
+        &--header{
+            display: none;
+        }
     }
     &__header{
         display: flex;
